@@ -1,0 +1,186 @@
+id,raw_record,cleaned_record,class_label
+1,"Usr login faild due too invald passwrd","User login failed due to invalid password",spelling_correction
+2,"Temprature sensor readng is missng","Temperature sensor reading is missing",spelling_correction
+3,"Paymnt procesing error in transction","Payment processing error in transaction",spelling_correction
+4,"The sysem shuld autenticate usr","The system should authenticate user",spelling_correction
+5,"Notifcation servce isnt wrking","Notification service is not working",spelling_correction
+6,"Usr accnt creadted succesfully","User account created successfully",spelling_correction
+7,"Camra modul detectd movment","Camera module detected movement",spelling_correction
+8,"Databse conection timd out","Database connection timed out",spelling_correction
+9,"Reccomendation engin faild","Recommendation engine failed",spelling_correction
+10,"API reqest retrned invald data","API request returned invalid data",spelling_correction
+11,"USA","United States",standardization
+12,"U.S.A","United States",standardization
+13,"NY","New York",standardization
+14,"Pk","Pakistan",standardization
+15,"D.I Khan","Dera Ismail Khan",standardization
+16,"Feb 2nd 2025","2025-02-02",standardization
+17,"03/11/26","2026-03-11",standardization
+18,"male","Male",standardization
+19,"f","Female",standardization
+20,"admin-user","Administrator",standardization
+21,"john smith","John Smith",capitalization_cleanup
+22,"dera ismail khan","Dera Ismail Khan",capitalization_cleanup
+23,"machine LEARNING engineer","Machine Learning Engineer",capitalization_cleanup
+24,"sensor status ACTIVE","Sensor Status Active",capitalization_cleanup
+25,"payment gateway offline","Payment Gateway Offline",capitalization_cleanup
+26,"temperature threshold exceeded","Temperature Threshold Exceeded",capitalization_cleanup
+27,"smart CITY monitoring","Smart City Monitoring",capitalization_cleanup
+28,"iot anomaly detector","IoT Anomaly Detector",capitalization_cleanup
+29,"network latency issue","Network Latency Issue",capitalization_cleanup
+30,"data pipeline corrupted","Data Pipeline Corrupted",capitalization_cleanup
+31,"NULL","Unknown",missing_value_imputation
+32,"NaN","0",missing_value_imputation
+33,"","Not Available",missing_value_imputation
+34,"missing","Undefined",missing_value_imputation
+35,"None","Guest",missing_value_imputation
+36,"-","No Data",missing_value_imputation
+37,"unknown","Unspecified",missing_value_imputation
+38,"999999","0",missing_value_imputation
+39,"not entered","Pending",missing_value_imputation
+40,"void","Inactive",missing_value_imputation
+41,"temperature is 9999 degree","temperature is 39 degree",anomaly_correction
+42,"user age is 250","user age is 25",anomaly_correction
+43,"network latency is -500 ms","network latency is 50 ms",anomaly_correction
+44,"humidity level reached 500 percent","humidity level reached 50 percent",anomaly_correction
+45,"transaction amount is 99999999","transaction amount is 9999",anomaly_correction
+46,"cpu usage is 300 percent","cpu usage is 100 percent",anomaly_correction
+47,"disk size detected as -1 TB","disk size detected as 1 TB",anomaly_correction
+48,"sensor reading is 100000 volts","sensor reading is 100 volts",anomaly_correction
+49,"response time is 99999 seconds","response time is 99 seconds",anomaly_correction
+50,"vehicle speed recorded as 1200 kmh","vehicle speed recorded as 120 kmh",anomaly_correction
+51,"usr email is basit@@gmail..com","user email is basit@gmail.com",spelling_correction
+52,"Pakistan ","Pakistan",standardization
+53,"machine learning ENGINEER","Machine Learning Engineer",capitalization_cleanup
+54,"N/A","Not Available",missing_value_imputation
+55,"power usage is -999 watts","power usage is 999 watts",anomaly_correction
+56,"The applcation crshed suddenlly","The application crashed suddenly",spelling_correction
+57,"UK","United Kingdom",standardization
+58,"deep LEARNING researcher","Deep Learning Researcher",capitalization_cleanup
+59,"undefined","Unknown",missing_value_imputation
+60,"heart rate detected as 999 bpm","heart rate detected as 99 bpm",anomaly_correction
+61,"Usr notfication wasnt delivred","User notification was not delivered",spelling_correction
+62,"Lahore pk","Lahore Pakistan",standardization
+63,"edge COMPUTING server","Edge Computing Server",capitalization_cleanup
+64,"empty","No Value",missing_value_imputation
+65,"temperature recorded as -2730 C","temperature recorded as -27 C",anomaly_correction
+66,"Autentication token expird","Authentication token expired",spelling_correction
+67,"DOB 12-5-99","1999-05-12",standardization
+68,"iot DEVICE gateway","IoT Device Gateway",capitalization_cleanup
+69,"nil","Undefined",missing_value_imputation
+70,"network packets counted as 999999999","network packets counted as 999999",anomaly_correction
+71,"Mesage queue isnt responing","Message queue is not responding",spelling_correction
+72,"usa ","United States",standardization
+73,"backend API manager","Backend API Manager",capitalization_cleanup
+74,"not found","Unavailable",missing_value_imputation
+75,"battery voltage is -48 volts","battery voltage is 48 volts",anomaly_correction
+76,"Usr sesson timeout occred","User session timeout occurred",spelling_correction
+77,"KPK","Khyber Pakhtunkhwa",standardization
+78,"cyber SECURITY analyst","Cyber Security Analyst",capitalization_cleanup
+79,"blank","No Entry",missing_value_imputation
+80,"server uptime is 999999 days","server uptime is 999 days",anomaly_correction
+
+
+
+81,"Dat procesing modul faild","Data processing module failed",spelling_correction
+82,"Usr registrtion completd","User registration completed",spelling_correction
+83,"Systm encountred fatal eror","System encountered fatal error",spelling_correction
+84,"Reciever didnt get mesage","Receiver did not get message",spelling_correction
+85,"Cloud storag synchroniztion faild","Cloud storage synchronization failed",spelling_correction
+86,"Sensr calibrtion requird","Sensor calibration required",spelling_correction
+87,"Paymnt recipt wasnt generatd","Payment receipt was not generated",spelling_correction
+88,"Machin learnng model overfittd","Machine learning model overfitted",spelling_correction
+89,"Usr profle pictur corupted","User profile picture corrupted",spelling_correction
+90,"Datastream packet los detectd","Datastream packet loss detected",spelling_correction
+91,"UAE","United Arab Emirates",standardization
+92,"KSA","Saudi Arabia",standardization
+93,"AI","Artificial Intelligence",standardization
+94,"ML","Machine Learning",standardization
+95,"NLP","Natural Language Processing",standardization
+96,"01-Jan-26","2026-01-01",standardization
+97,"31 Dec 2025","2025-12-31",standardization
+98,"M","Male",standardization
+99,"FEMALE","Female",standardization
+100,"sys-admin","System Administrator",standardization
+101,"network MONITORING service","Network Monitoring Service",capitalization_cleanup
+102,"edge server cluster","Edge Server Cluster",capitalization_cleanup
+103,"iot SENSOR gateway","IoT Sensor Gateway",capitalization_cleanup
+104,"database migration TOOL","Database Migration Tool",capitalization_cleanup
+105,"cyber attack prevention","Cyber Attack Prevention",capitalization_cleanup
+106,"cloud COMPUTING infrastructure","Cloud Computing Infrastructure",capitalization_cleanup
+107,"smart traffic SYSTEM","Smart Traffic System",capitalization_cleanup
+108,"deep neural NETWORK","Deep Neural Network",capitalization_cleanup
+109,"user activity LOGGER","User Activity Logger",capitalization_cleanup
+110,"predictive analytics ENGINE","Predictive Analytics Engine",capitalization_cleanup
+111,"NULL VALUE","Unknown",missing_value_imputation
+112,"NIL","Undefined",missing_value_imputation
+113,"not specified","Unspecified",missing_value_imputation
+114,"no entry","No Data",missing_value_imputation
+115,"data unavailable","Unavailable",missing_value_imputation
+116,"0/0","Undefined",missing_value_imputation
+117,"field empty","Pending",missing_value_imputation
+118,"not recorded","No Record",missing_value_imputation
+119,"value missing","Missing",missing_value_imputation
+120,"unfilled","Incomplete",missing_value_imputation
+121,"temperature reached 5000 C","temperature reached 50 C",anomaly_correction
+122,"user completed 99999 tasks in 1 sec","user completed 99 tasks in 1 sec",anomaly_correction
+123,"memory usage is -64 GB","memory usage is 64 GB",anomaly_correction
+124,"internet speed is 50000 Mbps","internet speed is 500 Mbps",anomaly_correction
+125,"signal strength is -999 dBm","signal strength is -99 dBm",anomaly_correction
+126,"response delay is 88888 ms","response delay is 888 ms",anomaly_correction
+127,"cpu temperature is 1000 C","cpu temperature is 100 C",anomaly_correction
+128,"user balance became -999999","user balance became 999",anomaly_correction
+129,"vehicle count is 99999999","vehicle count is 99999",anomaly_correction
+130,"power grid voltage is 99999 volts","power grid voltage is 999 volts",anomaly_correction
+
+
+131,"Usr permisson deneid for acces","User permission denied for access",spelling_correction
+132,"Aplication servr stoped unexpectdly","Application server stopped unexpectedly",spelling_correction
+133,"IoT devce isnt conncting","IoT device is not connecting",spelling_correction
+134,"Usr passwrd reset faild","User password reset failed",spelling_correction
+135,"Netwrk trafic exceedd limit","Network traffic exceeded limit",spelling_correction
+136,"Databse backup wasnt completd","Database backup was not completed",spelling_correction
+137,"Machne vision modul crashd","Machine vision module crashed",spelling_correction
+138,"Usr authntication unsuccessfull","User authentication unsuccessful",spelling_correction
+139,"Cloud enviroment misconfigurd","Cloud environment misconfigured",spelling_correction
+140,"Servr respons time increasd","Server response time increased",spelling_correction
+141,"U.K","United Kingdom",standardization
+142,"P.R China","China",standardization
+143,"KP","Khyber Pakhtunkhwa",standardization
+144,"DI Khan","Dera Ismail Khan",standardization
+145,"AI based sys","Artificial Intelligence Based System",standardization
+146,"15 Aug 2026","2026-08-15",standardization
+147,"2026/11/03","2026-11-03",standardization
+148,"usr","User",standardization
+149,"adm","Administrator",standardization
+150,"dev-op","DevOps",standardization
+151,"distributed SYSTEM architecture","Distributed System Architecture",capitalization_cleanup
+152,"iot data ANALYTICS","IoT Data Analytics",capitalization_cleanup
+153,"network SECURITY firewall","Network Security Firewall",capitalization_cleanup
+154,"real time MONITORING dashboard","Real Time Monitoring Dashboard",capitalization_cleanup
+155,"software REQUIREMENT classifier","Software Requirement Classifier",capitalization_cleanup
+156,"machine LEARNING pipeline","Machine Learning Pipeline",capitalization_cleanup
+157,"smart ENERGY management","Smart Energy Management",capitalization_cleanup
+158,"blockchain transaction ANALYZER","Blockchain Transaction Analyzer",capitalization_cleanup
+159,"traffic FLOW optimizer","Traffic Flow Optimizer",capitalization_cleanup
+160,"sensor DATA aggregator","Sensor Data Aggregator",capitalization_cleanup
+161,"not available","Unavailable",missing_value_imputation
+162,"void entry","No Value",missing_value_imputation
+163,"field missing","Missing",missing_value_imputation
+164,"0x0","Undefined",missing_value_imputation
+165,"none entered","Not Provided",missing_value_imputation
+166,"missing field","Incomplete",missing_value_imputation
+167,"record unavailable","No Record",missing_value_imputation
+168,"undefined value","Unknown",missing_value_imputation
+169,"empty record","Blank",missing_value_imputation
+170,"not applicable","N/A",missing_value_imputation
+171,"sensor output is 77777 volts","sensor output is 777 volts",anomaly_correction
+172,"temperature dropped to -999 C","temperature dropped to -99 C",anomaly_correction
+173,"user login attempts reached 99999","user login attempts reached 99",anomaly_correction
+174,"server memory became -1024 GB","server memory became 1024 GB",anomaly_correction
+175,"network speed is 123456 Mbps","network speed is 1234 Mbps",anomaly_correction
+176,"system uptime reached 9999999 hours","system uptime reached 9999 hours",anomaly_correction
+177,"vehicle speed recorded as 3000 kmh","vehicle speed recorded as 300 kmh",anomaly_correction
+178,"disk read speed is -500 MBps","disk read speed is 500 MBps",anomaly_correction
+179,"power consumption is 999999 watts","power consumption is 9999 watts",anomaly_correction
+180,"humidity level became -300 percent","humidity level became 30 percent",anomaly_correction
