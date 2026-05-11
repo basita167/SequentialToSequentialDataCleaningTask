@@ -1,0 +1,73 @@
+WARNING:absl:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+
+Loading existing model...
+
+Model: "functional_5"
+
+┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)        ┃ Output Shape      ┃    Param # ┃ Connected to      ┃
+┡━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━┩
+│ input_layer_10      │ (None, 20)        │          0 │ -                 │
+│ (InputLayer)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ input_layer_11      │ (None, 19)        │          0 │ -                 │
+│ (InputLayer)        │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ embedding_10        │ (None, 20, 128)   │     56,576 │ input_layer_10[0… │
+│ (Embedding)         │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ embedding_11        │ (None, 19, 128)   │     56,576 │ input_layer_11[0… │
+│ (Embedding)         │                   │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ gru_10 (GRU)        │ [(None, 20, 256), │    296,448 │ embedding_10[0][… │
+│                     │ (None, 256)]      │            │                   │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ gru_11 (GRU)        │ [(None, 19, 256), │    296,448 │ embedding_11[0][… │
+│                     │ (None, 256)]      │            │ gru_10[0][1]      │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ additive_attention… │ (None, 19, 256)   │        256 │ gru_11[0][0],     │
+│ (AdditiveAttention) │                   │            │ gru_10[0][0]      │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ concatenate_9       │ (None, 19, 512)   │          0 │ gru_11[0][0],     │
+│ (Concatenate)       │                   │            │ additive_attenti… │
+├─────────────────────┼───────────────────┼────────────┼───────────────────┤
+│ dense_5 (Dense)     │ (None, 19, 442)   │    226,746 │ concatenate_9[0]… │
+└─────────────────────┴───────────────────┴────────────┴───────────────────┘
+
+ Total params: 933,050 (3.56 MB)
+
+ Trainable params: 933,050 (3.56 MB)
+
+ Non-trainable params: 0 (0.00 B)
+
+Epoch 1/30
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 101ms/step - accuracy: 0.8464 - loss: 0.7311
+Epoch 1: val_loss improved from inf to 0.99641, saving model to gru_cleaning_model.h5
+
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+5/5 ━━━━━━━━━━━━━━━━━━━━ 6s 299ms/step - accuracy: 0.8473 - loss: 0.7279 - val_accuracy: 0.8611 - val_loss: 0.9964
+Epoch 2/30
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 95ms/step - accuracy: 0.8566 - loss: 0.6660 
+Epoch 2: val_loss improved from 0.99641 to 0.98886, saving model to gru_cleaning_model.h5
+
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+5/5 ━━━━━━━━━━━━━━━━━━━━ 1s 142ms/step - accuracy: 0.8564 - loss: 0.6666 - val_accuracy: 0.8655 - val_loss: 0.9889
+Epoch 3/30
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 99ms/step - accuracy: 0.8577 - loss: 0.6471 
+Epoch 3: val_loss did not improve from 0.98886
+5/5 ━━━━━━━━━━━━━━━━━━━━ 1s 131ms/step - accuracy: 0.8575 - loss: 0.6474 - val_accuracy: 0.8655 - val_loss: 1.0252
+Epoch 4/30
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 103ms/step - accuracy: 0.8577 - loss: 0.6343
+Epoch 4: val_loss did not improve from 0.98886
+5/5 ━━━━━━━━━━━━━━━━━━━━ 1s 134ms/step - accuracy: 0.8576 - loss: 0.6334 - val_accuracy: 0.8640 - val_loss: 1.0193
+Epoch 5/30
+5/5 ━━━━━━━━━━━━━━━━━━━━ 0s 99ms/step - accuracy: 0.8582 - loss: 0.6089 
+Epoch 5: val_loss did not improve from 0.98886
+5/5 ━━━━━━━━━━━━━━━━━━━━ 1s 131ms/step - accuracy: 0.8580 - loss: 0.6093 - val_accuracy: 0.8670 - val_loss: 1.0314
+
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+
+Model saved successfully!
+
